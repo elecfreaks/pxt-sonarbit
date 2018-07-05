@@ -7,7 +7,7 @@
 /**
  * Custom blocks
  */
-//% weight=100 color=#0fbc11 icon="\uf5a4"
+//% weight=100 color=#0fbc11 icon="\uf013"
 namespace sonarbit {
 
     /**
