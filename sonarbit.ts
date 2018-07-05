@@ -12,7 +12,6 @@ namespace sonarbit {
 
     /**
  * get Ultrasonic
- * @param jpin, eg: 3
 */
     //% blockId=robit_ultrasonic block="Ultrasonic distance at|pin %pin"
     //% weight=10
