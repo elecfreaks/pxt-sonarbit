@@ -1,0 +1,19 @@
+{
+    "name": "robit",
+    "version": "0.0.10",
+    "description": "ELECFREAKS robit",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+	"IR": "github:Tinkertanker/pxt-ir-receiver"
+    },
+    "files": [
+        "README.md",
+        "robit.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true,
+    "installedVersion": "github:elecfreaks/pxt-robit#v0.0.10"
+}
