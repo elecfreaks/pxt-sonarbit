@@ -14,9 +14,9 @@ namespace sonarbit {
  * get Ultrasonic
  * @param jpin, eg: 3
 */
-    //% blockId=robit_ultrasonic block="Ultrasonic|pin %pin"
+    //% blockId=robit_ultrasonic block="Ultrasonic distance at|pin %pin"
     //% weight=10
-    export function sonarbit(pin: DigitalPin): number {
+    export function sonarbit_distance(pin: DigitalPin): number {
 
         // send pulse
         pins.setPull(pin, PinPullMode.PullNone);
