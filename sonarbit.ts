@@ -13,7 +13,7 @@ namespace sonarbit {
     /**
  * get Ultrasonic
 */
-    //% blockId=robit_ultrasonic block="Ultrasonic distance at|pin %pin"
+    //% blockId=sonarbit block="Ultrasonic distance at|pin %pin"
     //% weight=10
     export function sonarbit_distance(pin: DigitalPin): number {
 
