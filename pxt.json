@@ -1,19 +1,18 @@
 {
-    "name": "robit",
+    "name": "sonarbit",
     "version": "0.0.10",
-    "description": "ELECFREAKS robit",
+    "description": "ELECFREAKS sonarbit",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-	"IR": "github:Tinkertanker/pxt-ir-receiver"
+        "core": "*"
     },
     "files": [
         "README.md",
-        "robit.ts"
+        "sonarbit.ts"
     ],
     "testFiles": [
         "tests.ts"
     ],
     "public": true,
-    "installedVersion": "github:elecfreaks/pxt-robit#v0.0.10"
+    "installedVersion": "github:elecfreaks/pxt-sonarbit#v0.0.10"
 }
