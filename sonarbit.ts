@@ -30,28 +30,29 @@ namespace sonarbit {
     export function sonarbit_distance(distance_unit: Distance_Unit, pin: DigitalPin): number {
 
         // send pulse
-        pins.setPull(pin, PinPullMode.PullNone);
-        pins.digitalWritePin(pin, 0);
-        control.waitMicros(2);
-        pins.digitalWritePin(pin, 1);
-        control.waitMicros(10);
-        pins.digitalWritePin(pin, 0);
+        pins.setPull(pin, PinPullMode.PullNone)
+        pins.digitalWritePin(pin, 0)
+        control.waitMicros(2)
+        pins.digitalWritePin(pin, 1)
+        control.waitMicros(10)
+        pins.digitalWritePin(pin, 0)
 
         // read pulse
-        let d = pins.pulseIn(pin, PulseValue.High, 23000);  // 8 / 340 = 
-        let distance = d * 10 * 5 / 3 / 58;
+        let d = pins.pulseIn(pin, PulseValue.High, 23000)  // 8 / 340 = 
+        let distance = d * 10 * 5 / 3 / 58
 
+        if (distance > 4000) distance = 0
 
         switch (distance_unit) {
             case 0:
                 return distance //mm
-                break;
+                break
             case 1:
                 return distance / 10  //cm
-                break;
+                break
             case 2:
                 return distance / 25  //inch
-                break;
+                break
             default:
                 return 0
 
