@@ -51,7 +51,7 @@ namespace sonarbit {
                 return distance / 10  //cm
                 break
             case 2:
-                return distance / 25  //inch
+                return distance * 10 / 254   //inch
                 break
             default:
                 return 0
