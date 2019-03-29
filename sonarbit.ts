@@ -41,21 +41,22 @@ namespace sonarbit {
         let d = pins.pulseIn(pin, PulseValue.High, 23000)  // 8 / 340 = 
         let distance = d * 10 * 5 / 3 / 58
 
-        if (distance > 4000) distance = 0
+        if (distance > 400) {
+            distance = 0
+        }
 
         switch (distance_unit) {
             case 0:
-                return distance //mm
+                return Math.round(distance) //mm
                 break
             case 1:
-                return distance / 10  //cm
+                return Math.round(distance / 10)  //cm
                 break
             case 2:
-                return distance * 10 / 254   //inch
+                return Math.round(distance * 10 / 254)   //inch
                 break
             default:
                 return 0
-
         }
 
     }
