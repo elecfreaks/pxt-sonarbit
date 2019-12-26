@@ -11,7 +11,8 @@
         "sonarbit.ts"
     ],
     "testFiles": [
-        "tests.ts"
+        "tests.ts",
+		"_locales/zh/motorbit-strings.json"
     ],
     "public": true,
     "installedVersion": "github:elecfreaks/pxt-sonarbit#v0.0.10"

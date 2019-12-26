@@ -1,0 +1,5 @@
+{
+  "Distance_Unit": "Use this file to define custom functions and blocks.\r\nRead more at https://makecode.microbit.org/blocks/custom",
+  "sonarbit": "Custom blocks",
+  "sonarbit.sonarbit_distance": "get Ultrasonic distance"
+}

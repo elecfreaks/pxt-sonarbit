@@ -1,0 +1,8 @@
+{
+  "Distance_Unit.Distance_Unit_cm|block": "cm",
+  "Distance_Unit.Distance_Unit_inch|block": "inch",
+  "Distance_Unit.Distance_Unit_mm|block": "mm",
+  "sonarbit.sonarbit_distance|block": "Ultrasonic distance in unit %distance_unit |at|pin %pin",
+  "sonarbit|block": "sonarbit",
+  "{id:category}Sonarbit": "Sonarbit"
+}
