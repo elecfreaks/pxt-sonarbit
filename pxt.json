@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "sonarbit.ts",
-	"_locales/zh/motorbit-strings.json"
+	"_locales/zh/sonarbit-strings.json"
     ],
     "testFiles": [
         "tests.ts"
