@@ -8,11 +8,11 @@
     },
     "files": [
         "README.md",
-        "sonarbit.ts"
+        "sonarbit.ts",
+	"_locales/zh/motorbit-strings.json"
     ],
     "testFiles": [
-        "tests.ts",
-	"_locales/zh/motorbit-strings.json"
+        "tests.ts"
     ],
     "public": true,
     "installedVersion": "github:elecfreaks/pxt-sonarbit#v0.0.10"
