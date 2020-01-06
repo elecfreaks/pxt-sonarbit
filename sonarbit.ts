@@ -38,8 +38,8 @@ namespace sonarbit {
         pins.digitalWritePin(pin, 0)
 
         // read pulse
-        let d = pins.pulseIn(pin, PulseValue.High, 23000)  // 8 / 340 = 
-        let distance = d * 10 * 5 / 3 / 58
+        let d = pins.pulseIn(pin, PulseValue.High, 25000)  // 8 / 340 = 
+        let distance = d * 9 / 6 / 58
 
         if (distance > 4000) {
             distance = 0
@@ -47,13 +47,13 @@ namespace sonarbit {
 
         switch (distance_unit) {
             case 0:
-                return Math.round(distance) //mm
+                return Math.floor(distance * 10) //mm
                 break
             case 1:
-                return Math.round(distance / 10)  //cm
+                return Math.floor(distance)  //cm
                 break
             case 2:
-                return Math.round(distance * 10 / 254)   //inch
+                return Math.floor(distance / 254)   //inch
                 break
             default:
                 return 0
