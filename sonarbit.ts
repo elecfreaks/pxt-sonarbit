@@ -41,7 +41,7 @@ namespace sonarbit {
         let d = pins.pulseIn(pin, PulseValue.High, 25000)  // 8 / 340 = 
         let distance = d * 9 / 6 / 58
 
-        if (distance > 4000) {
+        if (distance > 400) {
             distance = 0
         }
 
