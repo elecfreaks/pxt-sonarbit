@@ -2,7 +2,6 @@
  * Use this file to define custom functions and blocks.
  * Read more at https://makecode.microbit.org/blocks/custom
  */
-
 enum Distance_Unit {
     //% block="mm" enumval=0
     Distance_Unit_mm,
