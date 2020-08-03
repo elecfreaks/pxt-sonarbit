@@ -9,11 +9,14 @@
     "files": [
         "README.md",
         "sonarbit.ts",
-	"_locales/zh/sonarbit-strings.json"
+        "_locales/zh/sonarbit-strings.json"
     ],
     "testFiles": [
         "tests.ts"
     ],
     "public": true,
-    "installedVersion": "github:elecfreaks/pxt-sonarbit#v0.0.10"
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
