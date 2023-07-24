@@ -27,6 +27,8 @@ namespace sonarbit {
     //% weight=10
     export function sonarbit_distance(distance_unit: Distance_Unit, pin: DigitalPin): number {
 
+        let old = 0
+        let now = 0
         // send pulse
         pins.setPull(pin, PinPullMode.PullNone)
         pins.digitalWritePin(pin, 0)
@@ -36,20 +38,7 @@ namespace sonarbit {
         pins.digitalWritePin(pin, 0)
 
         // read pulse
-        //let d = pins.pulseIn(pin, PulseValue.High, 25000)  // 8 / 340 = 
-        let d = 0
-        while(1)
-        {
-            control.waitMicros(1)
-            if (pins.digitalReadPin(pin) == 1){
-                d = d + 1
-                if(d == 25000)
-                    break
-            }  
-            else{
-                break
-            }
-        }
+        let d = pins.pulseIn(pin, PulseValue.High, 25000)  // 8 / 340 = 
 
         let distance = d / 58
 
