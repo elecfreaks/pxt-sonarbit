@@ -36,7 +36,21 @@ namespace sonarbit {
         pins.digitalWritePin(pin, 0)
 
         // read pulse
-        let d = pins.pulseIn(pin, PulseValue.High, 25000)  // 8 / 340 = 
+        //let d = pins.pulseIn(pin, PulseValue.High, 25000)  // 8 / 340 = 
+        let d = 0
+        while(1)
+        {
+            control.waitMicros(1)
+            if (pins.digitalReadPin(pin) == 1){
+                d = d + 1
+                if(d == 25000)
+                    break
+            }  
+            else{
+                break
+            }
+        }
+
         let distance = d / 58
 
         if (distance > 400) {
