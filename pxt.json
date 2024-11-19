@@ -1,6 +1,6 @@
 {
     "name": "sonarbit",
-    "version": "1.1.8",
+    "version": "1.0.9",
     "description": "ELECFREAKS sonarbit",
     "license": "MIT",
     "dependencies": {
