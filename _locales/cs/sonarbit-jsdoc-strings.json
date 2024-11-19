@@ -1,0 +1,5 @@
+{
+  "Distance_Unit": "Jednotka vzdálenosti.",
+  "sonarbit": "Poskytuje přístup k ultrazvukovému senzoru vzdálenosti.",
+  "sonarbit.sonarbit_distance": "Načte vzdálenost z ultrazvukového senzoru."
+}

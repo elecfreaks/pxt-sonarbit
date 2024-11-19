@@ -1,0 +1,8 @@
+{
+  "Distance_Unit.Distance_Unit_cm|block": "cm",
+  "Distance_Unit.Distance_Unit_inch|block": "inch",
+  "Distance_Unit.Distance_Unit_mm|block": "mm",
+  "sonarbit.sonarbit_distance|block": "ultrazvuková vzdálenost v %distance_unit(mm) |na|pinu %pin(P0)",
+  "sonarbit|block": "Sonarbit",
+  "{id:category}Sonarbit": "Sonarbit"
+}

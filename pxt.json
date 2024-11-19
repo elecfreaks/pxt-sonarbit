@@ -1,6 +1,6 @@
 {
     "name": "sonarbit",
-    "version": "1.0.8",
+    "version": "1.1.8",
     "description": "ELECFREAKS sonarbit",
     "license": "MIT",
     "dependencies": {
@@ -9,7 +9,9 @@
     "files": [
         "README.md",
         "sonarbit.ts",
-        "_locales/zh/sonarbit-strings.json"
+        "_locales/zh/sonarbit-strings.json",
+        "_locales/cs/sonarbit-strings.json",
+        "_locales/cs/sonarbit-jsdoc-strings.json"
     ],
     "testFiles": [
         "tests.ts"
